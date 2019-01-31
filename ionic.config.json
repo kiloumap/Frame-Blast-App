@@ -1,6 +1,8 @@
 {
   "name": "Blast app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "35d2a191"
 }

@@ -1,44 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+    <div class="ion-content">
+        <div class="ion-header">
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+                <ion-img id="logo_header" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
+            </ion-buttons>
+        </div>
+        <div text-center class="main_text">
+            <h1>ARE YOU READY ? </h1>
+            <h2>MADRID 2019</h2>
+            <div text-center class="countdown row">
+                <div class="month">{{ duration.months() }}</div>
+                <span class="title">M</span>
+                <div class="month">{{ duration.days() }}</div>
+                <span class="title">D</span>
+                <div class="hours">:{{ duration.hours() }}</div>
+                <span class="title">H</span>
+                <div class="minutes">:{{ duration.minutes() }}</div>
+                <span class="title">m</span>
+                <div class="seconds">:{{ duration.seconds() }}</div>
+                <span class="title">S</span>
+            </div>
+        </div>
+        <div class="ion-footer">
+            <div id="logo-footer">
+                <ion-img src="../../assets/logo/BLAST_triangle_Primary_wh_Smallscale_RGB.png"></ion-img>
+                <ion-img class="logo_footer" src="../../assets/logo/BLAST_logo_Primary_wh_Smallscale_RGB.png"></ion-img>
+            </div>
+        </div>
+    </div>
 </ion-content>
