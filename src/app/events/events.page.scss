@@ -1,0 +1,51 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+ion-card{
+  background-color: #705198;
+}
+.ion-content {
+  background-image: url('../../assets/background/page-team-fond-seul.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 100%;
+}
+
+.ion-header {
+  height: 50px;
+  padding: 25px 0 25px 15px;
+}
+
+#logo_header {
+  height: 70%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 25%;
+  margin: auto;
+}
+
+ion-content {
+  --ion-item-background-color-active: transparent;
+}
+
+.title {
+  padding-top: 10%;
+}
+
+.countdown {
+  margin: 20% 2% 20% 2%;
+  padding: 5% 1% 5% 10%;
+  font-size: 20pt;
+  border: solid 1px #161E44;
+  background-color: #212D6A;
+  border-radius: 2%;
+  box-shadow: 0px 0px 10px #787E9B, 0 1px 10px #787E9B;
+}
+
+.title {
+  margin-right: 10px;
+}
