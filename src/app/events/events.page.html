@@ -6,28 +6,22 @@
                 <ion-img id="logo_header" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
             </ion-buttons>
         </div>
-        <div text-center class="title">
-            <h1>EVENTS</h1>
+        <div class="container">
+            <div text-center class="title">
+                <h1>EVENTS</h1>
+            </div>
+            <ion-searchbar [(ngModel)]="searchText"></ion-searchbar>
+            <div *ngFor="let act of activities | filter : searchText">
+                <div class="col-sm-3 ml-1 mr-1 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="/assets/icon/burger_icon.PNG">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ act.title }}</h5>
+                            <p class="card-text">{{ act.desc }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ion-content padding>
-            <ion-card class="infos-card">
-                <ion-img src="/assets/icon/burger_icon.PNG"></ion-img>
-                <ion-card-header>
-                    <ion-card-title>Foodtrucks</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                    <p>BURGER, FRIES, HOT DOGS, DRINKS...</p>
-                </ion-card-content>
-            </ion-card>
-            <ion-card class="infos-card">
-                <ion-img src="/assets/icon/vr_icon.PNG"></ion-img>
-                <ion-card-header>
-                    <ion-card-title>VR_Games</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                    <p>TRY CS:GO IN VR</p>
-                </ion-card-content>
-            </ion-card>
-        </ion-content>
     </div>
 </ion-content>

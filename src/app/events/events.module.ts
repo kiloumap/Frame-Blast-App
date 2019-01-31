@@ -1,26 +1,31 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {Routes, RouterModule} from '@angular/router';
 
-import { IonicModule } from '@ionic/angular';
+import {IonicModule} from '@ionic/angular';
 
-import { EventsPage } from './events.page';
+import {EventsPage} from './events.page';
+import {FilterPipe} from '../../helpers/FilterPipe';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: EventsPage
-  }
+    {
+        path: '',
+        component: EventsPage
+    }
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [EventsPage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RouterModule.forChild(routes)
+    ],
+    declarations: [
+        EventsPage,
+        FilterPipe
+    ]
 })
-export class EventsPageModule {}
+export class EventsPageModule {
+}
