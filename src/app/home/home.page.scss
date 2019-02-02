@@ -13,6 +13,11 @@
   margin: auto;
 }
 
+.settings {
+    width: 10%;
+    margin-left: 80%;
+}
+
 .main_text {
   padding-top: 27%;
 }
@@ -60,13 +65,14 @@ form {
   font-size: 14pt;
   width: 90%;
 }
+
 .card {
   background-color: transparent;
   border-color: transparent;
 }
 
-.img_envelop{
-  width:105%;
+.img_envelop {
+  width: 105%;
   height: auto;
   border-radius: 50%;
 }
@@ -74,8 +80,9 @@ form {
 .welcome_card {
   font-family: ITC_Bk, serif;
   width: 50%;
+
   .card-img-top {
-    background-color: #705198 !important;
+    //background-color: #705198 !important;
     width: 55%;
     margin-left: 25%;
   }

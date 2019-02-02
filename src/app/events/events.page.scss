@@ -2,6 +2,7 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
 ion-card{
   background-color: #705198;
 }
@@ -9,6 +10,11 @@ ion-card{
 .ion-header {
   height: 50px;
   padding: 25px 0 25px 15px;
+}
+
+.settings {
+  width: 10%;
+  margin-left: 80%;
 }
 
 #logo_header {
@@ -19,10 +25,6 @@ ion-card{
   left: 25%;
   right: 25%;
   margin: auto;
-}
-
-ion-content {
-  //--ion-item-background-color-active: transparent;
 }
 
 .title {
@@ -37,6 +39,11 @@ ion-content {
 .card {
   background-color: #705198;
   color: white;
+  .card-img-top{
+    background-color: #161E44;
+  }
+  width: 65%;
+  margin-left: 15%;
 }
 
 

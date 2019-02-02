@@ -27,6 +27,9 @@ const routes: Routes = [
         path: 'infos',
         loadChildren: './infos/infos.module#InfosPageModule'
     },
+    {path: 'team', loadChildren: './team/team.module#TeamPageModule'},
+    {path: 'player', loadChildren: './player/player.module#PlayerPageModule'},
+    {path: 'account', loadChildren: './account/account.module#AccountPageModule'},
 ];
 
 @NgModule({

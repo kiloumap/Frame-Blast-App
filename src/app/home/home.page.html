@@ -6,16 +6,20 @@
                     <ion-menu-button></ion-menu-button>
                 </ion-buttons>
                 <ion-img id="logo_header" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
+                <ion-img routerLink="/account" id="account logo_header_right" class="settings"
+                         src="../../assets/icon/settings.svg" *ngIf="isLogged"></ion-img>
             </ion-toolbar>
         </ion-header>
         <div *ngIf="!isComeBefore">
             <div class="welcome_text">THANKS FOR HAVING DOWNLOAD BLAST APP</div>
-            <div text-center style="font-family: 'ITC_Bk',serif;" id="title">LITTLE RECAP OF YOUR ADVANTAGES</div>
+            <div text-center style="font-family: 'ITC_Bk',serif; width: 100%" id="title">LITTLE RECAP OF YOUR
+                ADVANTAGES
+            </div>
 
             <div class="row">
                 <div class="welcome_card col-sm-6">
                     <div class="card">
-                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <img class="card-img-top" src="../../assets/icon/icone-burger.png" alt="burger_wp">
                         <div class="card-body">
                             <p class="card-text" text-center>BOOK YOUR MEAL</p>
                         </div>
@@ -23,7 +27,7 @@
                 </div>
                 <div class="welcome_card col-sm-6">
                     <div class="card">
-                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <img class="card-img-top" src="../../assets/icon/icone-fast-pass.png" alt="burger_wp">
                         <div class="card-body">
                             <p class="card-text" text-center>GET A FAST PASS</p>
                         </div>
@@ -31,7 +35,7 @@
                 </div>
                 <div class="welcome_card col-sm-6">
                     <div class="card">
-                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <img class="card-img-top" src="../../assets/icon/icone-statistics.png" alt="burger_wp">
                         <div class="card-body">
                             <p class="card-text" text-center>CHECK STATS</p>
                         </div>
@@ -39,7 +43,7 @@
                 </div>
                 <div class="welcome_card col-sm-6">
                     <div class="card">
-                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <img class="card-img-top" src="../../assets/icon/icone-hologram-violet.png" alt="burger_wp">
                         <div class="card-body">
                             <p class="card-text" text-center>SEE SKINS IN HOLOGRAMS</p>
                         </div>

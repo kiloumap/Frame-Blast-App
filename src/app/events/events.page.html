@@ -6,6 +6,8 @@
                     <ion-menu-button></ion-menu-button>
                 </ion-buttons>
                 <ion-img id="logo_header" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
+                <ion-img routerLink="/account" id="account logo_header_right" class="settings"
+                         src="../../assets/icon/settings.svg" *ngIf="isLogged"></ion-img>
             </ion-toolbar>
         </ion-header>
         <div class="container">
@@ -27,10 +29,6 @@
         </div>
         <div class="ion-footer">
             <ion-img class="logo_footer" src="../../assets/logo/BLAST_logo_Primary_wh_Bigscale_RGB.png"></ion-img>
-            <ion-content #pageTop>
-                <!-- Other content here -->
-                ma bite
-            </ion-content>
         </div>
     </div>
 </ion-content>

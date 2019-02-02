@@ -1,0 +1,45 @@
+<ion-content>
+    <div class="ion-content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                </ion-buttons>
+                <ion-img id="logo_header" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
+                <ion-img routerLink="/account" id="account logo_header_right" class="settings"
+                         src="../../assets/icon/settings.svg" *ngIf="isLogged"></ion-img>
+            </ion-toolbar>
+        </ion-header>
+        <div text-center class="main_text">
+            <h1>PROFILE</h1>
+        </div>
+        <div class="container">
+            <!--<div text-center class="counter_background"></div>-->
+            <div class="counter_text">
+                <img class="counter_background" src="../../assets/icon/circle_2.png" alt=""/>
+                <p>{{ nbPoint }} Pts</p>
+            </div>
+        </div>
+        <div class="account" text-center="">
+            {{ displayName }}
+        </div>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <input style="text-align:center;" type="email" class="form-control" id="exampleInputEmail1"
+                           aria-describedby="emailHelp" placeholder="Phone number">
+                </div>
+                <div class="form-group">
+                    <input style="text-align:center;" type="password" class="form-control"
+                           id="exampleInputPassword1" placeholder="Email">
+                </div>
+                <button class="btn btn-primary col-12">Change Password</button>
+                <button class="btn btn-primary col-12">Link your steam account</button>
+                <button type="submit" class="btn btn-primary col-12">Save</button>
+            </form>
+        </div>
+        <div class="ion-footer">
+            <ion-img class="logo_footer" src="../../assets/logo/BLAST_logo_Primary_wh_Bigscale_RGB.png"></ion-img>
+        </div>
+    </div>
+</ion-content>

@@ -32,6 +32,7 @@ export class AppComponent {
         },
     ];
 
+    private isLogged = true;
     constructor(
         private platform: Platform,
         private splashScreen: SplashScreen,
