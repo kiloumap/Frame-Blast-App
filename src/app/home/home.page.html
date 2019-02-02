@@ -1,15 +1,58 @@
 <ion-content>
     <div class="ion-content">
-        <div class="ion-header">
-            <ion-buttons slot="start">
-                <ion-menu-button></ion-menu-button>
+        <ion-header>
+            <ion-toolbar>
+                <ion-buttons slot="start">
+                    <ion-menu-button></ion-menu-button>
+                </ion-buttons>
                 <ion-img id="logo_header" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
-            </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+        <div *ngIf="!isComeBefore">
+            <div class="welcome_text">THANKS FOR HAVING DOWNLOAD BLAST APP</div>
+            <div text-center style="font-family: 'ITC_Bk',serif;" id="title">LITTLE RECAP OF YOUR ADVANTAGES</div>
+
+            <div class="row">
+                <div class="welcome_card col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <div class="card-body">
+                            <p class="card-text" text-center>BOOK YOUR MEAL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome_card col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <div class="card-body">
+                            <p class="card-text" text-center>GET A FAST PASS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome_card col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <div class="card-body">
+                            <p class="card-text" text-center>CHECK STATS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome_card col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="../../assets/icon/burger_wp.PNG" alt="burger_wp">
+                        <div class="card-body">
+                            <p class="card-text" text-center>SEE SKINS IN HOLOGRAMS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button text-center class="btn btn-primary start" (click)="isComeBefore=true">Let's go !</button>
         </div>
-        <div text-center class="main_text">
+        <div text-center class="main_text" *ngIf="isComeBefore">
             <h1>ARE YOU READY ? </h1>
             <h2>MADRID 2019</h2>
-            <div text-center class="countdown row">
+            <div text-center class="countdown row" *ngIf="isAvailable">
                 <div class="month">{{ duration.months() }}</div>
                 <span class="title">M</span>
                 <div class="month">{{ duration.days() }}</div>
@@ -21,8 +64,22 @@
                 <div class="seconds">:{{ duration.seconds() }}</div>
                 <span class="title">S</span>
             </div>
+            <div text-center="" *ngIf="!isAvailable" class="container">
+                <form>
+                    <div class="form-group">
+                        <input style="text-align:center;" type="email" class="form-control" id="exampleInputEmail1"
+                               aria-describedby="emailHelp" placeholder="Pseudo/email">
+                    </div>
+                    <div class="form-group">
+                        <input style="text-align:center;" type="password" class="form-control"
+                               id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login / Register</button>
+                </form>
+            </div>
         </div>
-        <ion-img class="logo_footer" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
-        <!--<ion-img class="logo_footer" src="../../assets/logo/BLAST_logo_Primary_wh_Bigscale_RGB.png"></ion-img>-->
+        <div class="ion-footer">
+            <ion-img class="logo_footer" src="../../assets/logo/BLAST_logo_Primary_wh_Bigscale_RGB.png"></ion-img>
+        </div>
     </div>
 </ion-content>

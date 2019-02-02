@@ -1,8 +1,22 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
+@font-face {
+  font-family: 'ITC_Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/font/ITC_ITCAvantGardeW1G-Bold.otf');
+}
 
+@font-face {
+  font-family: 'ITC_Bk';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/font/ITC_ITCAvantGardeW1G-Bk.otf');
+}
 /** Ionic CSS Variables **/
 :root {
+  --ion-font-family: 'ITC_Bold';
+
   /** primary **/
   --ion-color-primary: #fff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -97,4 +111,13 @@
       color: white;
     }
   }
+
+  .ion-footer{
+      bottom: 0;
+      margin-bottom: 20px;
+    ion-img{
+      height: 50px;
+    }
+  }
+
 }

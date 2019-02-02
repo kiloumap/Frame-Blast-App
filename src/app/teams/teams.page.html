@@ -3,24 +3,30 @@
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-icon></ion-icon>
-        <ion-title>
-            Home
-        </ion-title>
+        <ion-img id="logo_header" src="../../assets/logo/BLAST_triangle_Primary_wh_Bigscale_RGB.png"></ion-img>
     </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
-    <ion-card class="welcome-card">
-        <ion-img src="/assets/shapes.svg"></ion-img>
-        <ion-card-header>
-            <ion-card-subtitle>Get Started</ion-card-subtitle>
-            <ion-card-title>Welcome to Ionic</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-            <p>Now that your app has been created, you'll want to start building out features and components. Check
-                out
-                some of the resources below for next steps.</p>
-        </ion-card-content>
-    </ion-card>
+    <div text-center class="title">
+        <h1>TEAMS</h1>
+    </div>
+    <div class="container">
+        <div *ngFor="let t of teams">
+            <div class="col-sm-3 ml-1 mr-1 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="{{ t.icon }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ t.name }}</h5>
+                        <div class="row country">
+                            <img class="card-img-bot ml-2 mr-2" src="{{ t.flag }}">
+                            <p class="card-text">{{ t.country }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ion-footer">
+        <ion-img class="logo_footer" src="../../assets/logo/BLAST_logo_Primary_wh_Bigscale_RGB.png"></ion-img>
+    </div>
 </ion-content>

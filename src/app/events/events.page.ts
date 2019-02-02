@@ -12,35 +12,35 @@ import {Component, OnInit, Pipe} from '@angular/core';
 export class EventsPage implements OnInit {
     private activities = [
         {
-            icon: 'burger',
+            icon: '/assets/icon/burger_icon.PNG',
             title: 'Foodtrucks',
             desc: 'BURGER, FRIES, HOT DOGS, DRINKS...'
         }, {
-            icon: 'info',
+            icon: '/assets/icon/vr_icon.PNG',
             title: 'VR',
             desc: 'TRY CS:GO IN VR...'
         }, {
-            icon: 'info',
+            icon: '/assets/icon/burger_icon.PNG',
             title: 'Training',
             desc: 'Be train to improove your skill by pro gamer !'
         }, {
-            icon: 'info',
+            icon: '/assets/icon/burger_icon.PNG',
             title: 'Goodies',
             desc: 'Buy many goodies from Blast.'
         }, {
-            icon: 'info',
+            icon: '/assets/icon/burger_icon.PNG',
             title: 'Partnership',
             desc: 'Buy many stuff from our partner.'
         }, {
-            icon: 'info',
+            icon: '/assets/icon/burger_icon.PNG',
             title: 'Holograms',
-            desc: 'Let see many weapons skin in holograms !'
+            desc: 'Let see many weapons skins with holograms technologies!'
         }, {
-            icon: 'info',
+            icon: '/assets/icon/burger_icon.PNG',
             title: 'Demonstration',
-            desc: 'Je c plus'
+            desc: 'Play with your mates in CS:GO'
         }, {
-            icon: 'info',
+            icon: '/assets/icon/burger_icon.PNG',
             title: 'Counter Strike',
             desc: 'Exclusive box to buy only here !'
         }
