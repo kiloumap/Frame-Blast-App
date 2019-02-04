@@ -13,8 +13,13 @@
     * F12 et mettre la page en version mobile (responsive) pour simuler l'affichage d'un portable
     
 ### Tester depuis un smartphone
+**Soit :** 
 * Télécharger l'application **Ionic Devapp**
 *https://ionicframework.com/docs/appflow/devapp#download-the-devapp* 
 
 * Connecter le smartphone au même reseau que l'ordinateur (un partage de connection par cable suffit)
-* Lancer l'application et relancer le server ionic si besoin ai
+* Lancer l'application et relancer le server ionic si besoin
+
+**OU :**
+* Transferer le fichier 'app-debug.apk' disponible à la racine sur un smartphone android. 
+* Depuis le téléphone installer l'application.
