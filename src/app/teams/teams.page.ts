@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teams.page.scss'],
 })
 export class TeamsPage implements OnInit {
-    private teams = [
+    public teams = [
         {
             icon: '/assets/icon/anon_team.PNG',
             name: 'TBA',

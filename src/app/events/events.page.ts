@@ -10,7 +10,7 @@ import {Component, OnInit, Pipe} from '@angular/core';
     styleUrls: ['./events.page.scss'],
 })
 export class EventsPage implements OnInit {
-    private activities = [
+    public activities = [
         {
             icon: '../../assets/icon/icone-burger-bleue.png',
             title: 'Foodtrucks',
@@ -45,6 +45,7 @@ export class EventsPage implements OnInit {
             desc: 'Exclusive box to buy only here !'
         }
     ];
+    searchText: any;
     constructor() {
     }
 

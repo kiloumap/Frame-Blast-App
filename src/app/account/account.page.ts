@@ -6,10 +6,10 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./account.page.scss'],
 })
 export class AccountPage implements OnInit {
-    private nbPoint = 0;
+    public nbPoint = 0;
     private pseudo = 'Kiloumap';
     private email = 'laurent.martinez@ynov.com';
-    private displayName = 'Has No Name';
+    public displayName = 'Has No Name';
 
     constructor() {
         if (this.email) {

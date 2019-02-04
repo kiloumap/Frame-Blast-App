@@ -258,4 +258,6 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+#platforms
+platforms/
 # End of https://www.gitignore.io/api/node,ionic3,angular,webstorm

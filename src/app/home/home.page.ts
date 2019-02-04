@@ -13,7 +13,7 @@ export class HomePage {
     private interval = 1000;
     private isLogged = true;
     private isAvailable = false;
-    private isComeBefore = false;
+    public isComeBefore = false;
 
     constructor() {
         if (this.isComeBefore) {
