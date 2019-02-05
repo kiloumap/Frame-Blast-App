@@ -20,6 +20,6 @@
 * Connecter le smartphone au même reseau que l'ordinateur (un partage de connection par cable suffit)
 * Lancer l'application et relancer le server ionic si besoin
 
-**OU :**
+**OU :**m
 * Transferer le fichier 'app-debug.apk' disponible à la racine sur un smartphone android. 
 * Depuis le téléphone installer l'application.
