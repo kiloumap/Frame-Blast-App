@@ -1,4 +1,8 @@
 # BLAST APP
+
+## Description
+My first ionic app made in 2 nights by I. 
+
 ## Guide d'installation
 
 ### Cloner le repo sur sa machine locale à l'endroit souhaité
